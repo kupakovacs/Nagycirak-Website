@@ -13,7 +13,7 @@ export const NavBar = () => {
         width: "100svw",
         background: "transparent",
         paddingBottom: "10px",
-        backgroundColor: "#14cc60",
+        backgroundColor: "#e8ebe9",
         borderRadius: "8px",
         paddingTop: "10px",
         marginTop: "-15px",
@@ -38,6 +38,12 @@ export const NavBar = () => {
           })}
         </ul>
       </center>
+      <a
+        style={{ position: "absolute", top: "30px", right: "100px" }}
+        href="/vebcam"
+      >
+        vebkamerák
+      </a>
     </div>
   );
 };

@@ -2,17 +2,17 @@ export const NavBarElements = [
     {
         name: "Rólunk",
         link: "/rolunk",
-        color: "#CE2939"
+        color: "#363b4e"
     },
     {
         name: "Történelem",
         link: "/tortenelem",
-        color: "#FFFFFF"
+        color: "#363b4e"
     },
     {
         name: "Statsztika",
         link: "/statisztika",
-        color: "#477050"
+        color: "#363b4e"
     },
 
 ]
