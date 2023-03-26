@@ -146,3 +146,10 @@
     background-position-y: center;
 
 }
+.hirNev{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hirNev:hover{
+    opacity: 0.7;
+}

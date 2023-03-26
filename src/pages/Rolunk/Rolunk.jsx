@@ -1,6 +1,8 @@
 import React from "react";
 import "./Rolunk.css";
 import "./Rolunk.js";
+import { Cikkek } from "../Hirek/Cikkek";
+import { Parallax } from "react-scroll-parallax";
 
 const onkormanyzat = [
   {
@@ -53,6 +55,17 @@ const latvanyossagok = [
       "https://assets.telex.hu/images/20220506/1651827339-temp-iANPGe_cover.jpg",
     leiras:
       "ez egy atópáa és nagyon menő és nagyon nagyon szép és olcsó volt megépíteni",
+  },
+];
+
+const hirek = Cikkek;
+
+const esemenyek = [
+  {
+    name: "csütörtöki cica cirógatás",
+    picture:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1920px-Cat_August_2010-4.jpg",
+    descption: "Minden csütrötökön 12:02-től 12:57-ig egy macskát simogatunk",
   },
 ];
 
@@ -247,6 +260,13 @@ export const Rolunk = () => {
                 backgroundImage:
                   "url(https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)",
               }}
+              onClick={() =>
+                window.scrollTo({
+                  behavior: "smooth",
+                  top: `${document.getElementById("esemenyekDiv").offsetTop}`,
+                  left: "0",
+                })
+              }
             />
             <h1>események</h1>
           </div>
@@ -340,19 +360,47 @@ export const Rolunk = () => {
             URGENT HÍR: LACI BÁCSI ÖSSZEFOSTA A POSTAHIVATAL VÉCÉJÉT
           </marquee>
           <div style={{ display: "flex" }}>
-            <div style={{ marginLeft: "20px" }}>
-              <h1>hír neve</h1>
-              <h4>hír leírásja</h4>
-            </div>
-            <div style={{ marginLeft: "20px" }}>
-              <h1>hír neve</h1>
-              <h4>hír leírásja</h4>
-            </div>
-            <div style={{ marginLeft: "20px" }}>
-              <h1>hír neve</h1>
-              <h4>hír leírásja</h4>
-            </div>
+            {hirek.map((value, key) => {
+              return (
+                <div key={key} style={{ marginLeft: "20px" }}>
+                  <img src={value.picture} />
+                  <h1
+                    className="hirNev"
+                    onClick={() =>
+                      (window.location.pathname = `/hirek/?name=${encodeURIComponent(
+                        `${value.name}`
+                      )}`)
+                    }
+                  >
+                    {value.name}
+                  </h1>
+                </div>
+              );
+            })}
           </div>
+        </div>
+        <div id="esemenyekDiv">
+          <h1>Események: </h1>
+          {esemenyek.map((value, key) => {
+            return (
+              <div
+                key={key}
+                style={{
+                  backgroundImage: `url(${value.picture})`,
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  width: "50%",
+                  transform: "translate(50%)",
+                  height: "450px",
+                  backgroundPosition: "center",
+                  borderRadius: "10px",
+                }}
+              >
+                <h1>{value.name}</h1>
+                <h3>{value.descption}</h3>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

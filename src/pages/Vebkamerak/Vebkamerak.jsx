@@ -1,18 +1,22 @@
 import React from "react";
+import bumm from "./bumm.mp4";
 
 export const Vebkamerak = () => {
+  const resizeVideo = () => {
+    var video = document.getElementById("webcamVideo");
+    video.width = video.style.width;
+    video.height = video.style.height;
+  };
+
   return (
     <div>
-      <video src=""> </video>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/uD7W19HOV_0?autoplay=1&controls=0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+      <video
+        id="webcamVideo"
+        style={{ width: "1200px", height: "100%" }}
+        src={bumm}
+        autoPlay={true}
+        //onLoad={resizeVideo}
+      ></video>
     </div>
   );
 };
