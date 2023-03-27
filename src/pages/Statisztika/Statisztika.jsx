@@ -8,6 +8,7 @@ export const Statisztika = () => {
 
     socket.addEventListener("message", (event) => {
       setNepesseg(event.data);
+      console.log(event);
     });
     return () => {
       socket.close();

@@ -3,6 +3,7 @@ import "./Rolunk.css";
 import "./Rolunk.js";
 import { Cikkek } from "../Hirek/Cikkek";
 import { Parallax } from "react-scroll-parallax";
+const hirek = Cikkek;
 
 const onkormanyzat = [
   {
@@ -57,8 +58,6 @@ const latvanyossagok = [
       "ez egy atópáa és nagyon menő és nagyon nagyon szép és olcsó volt megépíteni",
   },
 ];
-
-const hirek = Cikkek;
 
 const esemenyek = [
   {
