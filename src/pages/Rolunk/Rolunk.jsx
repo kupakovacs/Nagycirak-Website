@@ -211,6 +211,7 @@ export const Rolunk = () => {
                   "url(https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)",
               }}
             />
+
             <h1>önkormáyztaunk</h1>
           </div>
 
@@ -292,7 +293,16 @@ export const Rolunk = () => {
             imádjuk az erőszakot, anarchia van a faluban, mindenki azt lop amit
             csak akar
           </h4>
-          <h4>meow2</h4>
+          <div>
+            <h1>Testvértelepülésünk: </h1>
+            <h4>
+              Nagycirák testvér települése a közepes-cirák. A két település
+              egymástól kb 7km-re helyeszkednek el. A kapcsolat eredetileg
+              1926-ban jött létre, amikor a két település egymás ellen
+              játszottak régionális foci mecset, ebből készítettek tradíciót
+              ahol, minden évbe egyszer játszanak egy mecset egymással.
+            </h4>
+          </div>
           <img
             width="100%"
             height="400px"
@@ -300,7 +310,24 @@ export const Rolunk = () => {
           />
         </div>
 
-        <h1>Önkormáyztaunk:</h1>
+        <div>
+          <h1>Jövőképünk: </h1>
+          <h4
+            style={{
+              width: "50%",
+              transform: "translate(50%)",
+              fontSize: "120%",
+            }}
+          >
+            Mint egy város, az a célunk, hogy minél nagyobra nőjünk. Ezt úgy
+            tervezzük elérni, hogy építünk több házat, hogy ne legyen túl drága
+            Nagycirákra költözni, csökkentsük az ingatlanárakat. Tervezzük az
+            iparűzési adót csökkenti, hogy több céget tudjunk a városba vonzani.
+            A jövőbe be szeretnénk vezetni több családtámogatási programot.
+          </h4>
+        </div>
+
+        <h1>Önkormáyztaunk: </h1>
         <div
           id="onkormanyzatDiv"
           style={{ display: "grid", gridTemplateColumns: "25% 25% 25% 25%" }}

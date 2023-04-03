@@ -14,5 +14,10 @@ export const NavBarElements = [
         link: "/statisztika",
         color: "#363b4e"
     },
+    {
+        name: "Önkormányzat",
+        link: "/onkormanyzat",
+        color: "#363b4e"
+    },
 
 ]

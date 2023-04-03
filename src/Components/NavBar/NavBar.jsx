@@ -44,6 +44,12 @@ export const NavBar = () => {
       >
         vebkamerák
       </a>
+      <a
+        style={{ position: "absolute", top: "30px", right: "250px" }}
+        href="/terkep"
+      >
+        térkép
+      </a>
     </div>
   );
 };
