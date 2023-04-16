@@ -20,20 +20,18 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/">
-            <Route path="rolunk" element={<Rolunk />} />
-            <Route path="tortenelem" element={<Tortenelem />} />
-            <Route path="vebcam" element={<Vebkamerak />} />
-            <Route path="statisztika" element={<Statisztika />} />
-            <Route path="hirek/:hirNev" element={<Hirek />} />
-            <Route path="terkep" element={<Terkep />} />
-            <Route index element={<Rolunk />} />
-            <Route path="onkormanyzat" element={<Onkormanyzat />} />
-            <Route
-              path="onkormanyzat/:onkormanyzatnev"
-              element={<SpecifikusOnkormanyzat />}
-            />
-          </Route>
+          <Route path="/rolunk" element={<Rolunk />} />
+          <Route path="/tortenelem" element={<Tortenelem />} />
+          <Route path="/vebcam" element={<Vebkamerak />} />
+          <Route path="/statisztika" element={<Statisztika />} />
+          <Route path="/hirek/:hirNev" element={<Hirek />} />
+          <Route path="/terkep" element={<Terkep />} />
+          <Route path="/" element={<Rolunk />} />
+          <Route path="/onkormanyzat" element={<Onkormanyzat />} />
+          <Route
+            path="/onkormanyzat/:onkormanyzatnev"
+            element={<SpecifikusOnkormanyzat />}
+          />
         </Routes>
       </Router>
     </>
