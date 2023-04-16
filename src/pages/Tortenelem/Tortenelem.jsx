@@ -95,14 +95,16 @@ export const Tortenelem = () => {
             }}
           >
             A Nagycirák nevet eredetileg a kunok kezdték el használni. Az első
-            része a névnek a "nagy" onnan jött hogy régebben volt mellete egy
-            kisebb település ami a tatárjárás során fel lett égetve és nem
-            maradt meg, de megmaradt a nagy része a névnek. A névnek a második
-            része a "cirák" egy régi tradicióból jön, régebben azt gondolták a
-            kunok, hogyha beleteszik a cirákot a falu nevében akkor szerencsét
-            fog nekik hozni.
+            része a névnek a "nagy" onnan jött, hogy régebben volt mellete egy
+            kisebb település, ami a tatárjárás során fel lett égetve, de a
+            névelő megmaradt. A névnek a második része a "cirák" egy ősi
+            legendából ered, miszerint egy ember egy közeli faluban melátott egy
+            aranyos kiscicát, amit minden áron meg akart simogatni. Viszont a
+            macska elfutott, az elszánt kalandor pedig futott utána. Végül
+            amikor a macska megállt egy folyóparton, és megengedte, hogy
+            megcirógassák őt, a férfi annyira örült, hogy ott letelepedett, és
+            új életet kezdett, a macskával együtt.
           </p>
-          <h1>Címer eredete: </h1>
         </div>
       </div>
     </div>

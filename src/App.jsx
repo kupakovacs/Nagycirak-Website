@@ -10,6 +10,7 @@ import { Hirek } from "./pages/Hirek/Hirek.jsx";
 import { Statisztika } from "./pages/Statisztika/Statisztika.jsx";
 import { Terkep } from "./pages/Terkep/Terkep.jsx";
 import { Onkormanyzat } from "./pages/Onkormanyzat/Onkormanyzat.jsx";
+import { SpecifikusOnkormanyzat } from "./pages/Onkormanyzat/SpecifikusOnkormanyzat.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,10 @@ function App() {
             <Route path="terkep" element={<Terkep />} />
             <Route index element={<Rolunk />} />
             <Route path="onkormanyzat" element={<Onkormanyzat />} />
+            <Route
+              path="onkormanyzat/:onkormanyzatnev"
+              element={<SpecifikusOnkormanyzat />}
+            />
           </Route>
         </Routes>
       </Router>

@@ -15,7 +15,7 @@ export const NavBarElements = [
         color: "#363b4e"
     },
     {
-        name: "Önkormányzat",
+        name: "Falu vezetés",
         link: "/onkormanyzat",
         color: "#363b4e"
     },
