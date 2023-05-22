@@ -8,15 +8,14 @@ const hirek = Cikkek;
 const latvanyossagok = [
   {
     name: "Közösségi Ház",
-    picture:
-      "http://www.kitervezte.hu/images/epuletek/kozossegi-haz-nemesgorzsony/kozossegi-haz-nemesgorzsony_.jpg",
+    picture: "http://karancskeszi.hu/i/kepek/intezmenyek/kozossegi_haz.jpg",
     leiras:
       "A falu központjában található modern épület, amely számos kulturális és szabadidős programot kínál az itt lakóknak. Az épületben található könyvtár, számítógépes terem, sportpálya és színházterem is.",
   },
   {
     name: "Tanösvény",
     picture:
-      "https://scontent-vie1-1.xx.fbcdn.net/v/t31.18172-8/21731581_1554704381252305_8928833032808460487_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9267fe&_nc_ohc=h7MkVL2_xdoAX-l20FP&_nc_ht=scontent-vie1-1.xx&oh=00_AfCK6PgO1SSYOHpv7GvilKN_AANw6nzZ1EpMgasPZd_zKA&oe=64631EF0",
+      "https://csodahelyek.hu/wp-content/uploads/2022/06/tatai_fenyes_tanosveny23_fejlec.jpg",
     leiras:
       "A falu mellett található erdőben kijelölt tanösvényen lehet kirándulni és a természetet megismerni. A tanösvényen információs táblák segítik az ismeretterjesztést, és bemutatják a helyi növény- és állatvilágot.",
   },
@@ -317,12 +316,13 @@ export const Rolunk = () => {
           <div>
             <h1>Jövőképünk: </h1>
             <h2>
-              Mint egy város, az a célunk, hogy minél nagyobra nőjünk. Ezt úgy
-              tervezzük elérni, hogy egyre több házat éppítettünk, hogy ne
-              legyen túl drága Nagycirákra költözni, és es még az
-              építkezésiparnak is kedvező. Tervezzük az iparűzési adót
-              csökkenti, hogy több céget tudjunk a városba vonzani. A jövőben be
-              szeretnénk vezetni családtámogatási programokat.
+              Mint egy város, az a célunk, hogy minél nagyobra nőjünk, és a
+              lehető legboldogabb legyenek lakosaink. Ezt úgy tervezzük elérni,
+              hogy egyre több házat éppítettünk, hogy ne legyen túl drága
+              Nagycirákra költözni, és es még az építkezésiparnak is kedvező.
+              Tervezzük az iparűzési adót csökkenti, hogy több céget tudjunk a
+              városba vonzani. A jövőben be szeretnénk vezetni családtámogatási
+              programokat.
             </h2>
           </div>
           <img
