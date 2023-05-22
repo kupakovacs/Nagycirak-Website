@@ -26,10 +26,10 @@ const bizottsagok = [
 const civilSzervezetek = [
   {
     vezeto: "Asztalos Dávid Péter",
-    cim: "Vitorlás Klubb",
-    leiras: `A Nagycirák vitorlás klub egy nonprofit szervezet, amely a lakosoknak van fenntartva. A vitorlás klub a Duna partján helyeszkedik el és nagycirák egyik fő atrakciója.
+    cim: "Vitorlás Klub",
+    leiras: `A Nagycirák vitorlás klub egy nonprofit szervezet, amely a lakosoknak van fenntartva. A vitorlás klub a Duna partján helyeszkedik el és nagycirák egyik fő attrakciója.
 
-A klub eredetileg 1912-ben lett megalapítva azzal a célal, hogy egy nagyobb közösségnek elérhetője legyen a vitorlázás és egyéb vizisportok. Az egyesület az évek során rengeteget fejlődött, kitágították a kikötőt és vásároltak új hajókat. A klubnak vannak régi tradiciói, például a szezon nyitó/záró versenyek és a havonta tartott regatták. 
+A klub eredetileg 1912-ben lett megalapítva azzal a célal, hogy egy nagyobb közösségnek elérhető legyen a vitorlázás és egyéb vizisportok. Az egyesület az évek során rengeteget fejlődött, kitágították a kikötőt és vásároltak új hajókat. A klubnak vannak régi tradiciói, például a szezon nyitó/záró versenyek és a havonta tartott regatták. 
 
 A klub nonprofit módon operál, mindenkinek kell fizetni egy kis tagdíjat, a klubnak a veszteségét a helyi önkormányzat kárpótolja. A klub továbbá szokott szervezni jótékonysági versenyeket-`,
   },
@@ -92,7 +92,7 @@ export const Onkormanyzat = () => {
       <div style={{ marginTop: "200px" }}>
         {civilSzervezetek.map((szervezet, key) => {
           return (
-            <div>
+            <div key={key}>
               <h1>{szervezet.cim}</h1>
               {szervezet.leiras.split("\n").map((bekezdes, bekezdesKey) => {
                 return (

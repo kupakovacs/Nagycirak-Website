@@ -133,7 +133,7 @@ export const SpecifikusOnkormanyzat = () => {
               <div style={{ display: "flex", justifyContent: "center" }}>
                 {bizottsag.emberek.map((ember, emberKey) => {
                   return (
-                    <div style={{ marginInline: "20px" }}>
+                    <div style={{ marginInline: "20px" }} key={emberKey}>
                       <img
                         src={ember.kep}
                         style={{

@@ -144,17 +144,17 @@ export const Rolunk = () => {
         }}
         id="heroColapser"
       >
-        <h1
+        <h3
           style={{
             position: "absolute",
             top: "300px",
             left: "600px",
-            fontSize: "80px",
+            fontSize: "60px",
             zIndex: "2",
           }}
         >
-          A legmenőbb falu
-        </h1>
+          Bács-Kiskun legélhetőbb városa
+        </h3>
       </div>
       <center
         style={{
@@ -189,7 +189,7 @@ export const Rolunk = () => {
               }}
             />
 
-            <h1>rólunk</h1>
+            <h1>Rólunk</h1>
           </div>
 
           <div
@@ -209,7 +209,7 @@ export const Rolunk = () => {
                   "url(https://csodalatosbalaton.hu/wp-content/uploads/2021/08/tucsokdomb-kilato-nemesvita-csodalatosbalaton-turazas-magyarorszag-bringazas2.jpg)",
               }}
             />
-            <h1>látványosságok</h1>
+            <h1>Látványosságok</h1>
           </div>
           <div
             className="categoryBlob"
@@ -228,7 +228,7 @@ export const Rolunk = () => {
                   "url(https://zsido.com/files/2021/02/newspapers-istock-1165186939-1586356097.jpg)",
               }}
             />
-            <h1>hírek</h1>
+            <h1>Hírek</h1>
           </div>
           <div className="categoryBlob">
             <div
@@ -245,7 +245,7 @@ export const Rolunk = () => {
                 })
               }
             />
-            <h1>események</h1>
+            <h1>Események</h1>
           </div>
         </div>
       </center>
@@ -269,19 +269,20 @@ export const Rolunk = () => {
             src="https://www.travelandleisure.com/thmb/316_vo4gdOUTHB4ViB2s730kscY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/telluride-colorado-BESTSMALL0121-22f286c59f7d4077ad15f9359497219f.jpg"
           />
           <h2>
-            Nagycirák vagyunk, közepes méretű város vagy bács-kiskun megyébe.
-            Bács-kiskun legélhetőb városa címe büszke tulajodnosai vagyunk.
-            Folyamatason növekszünk és növekszik az iparunk, a gyors
-            növekedésünk ellenébe komolyan vesszük a hagyomány megörzést.
+            Nagycirák vagyunk, egy közepes méretű város vagy Bács-kiskun
+            megyében. Bács-Kiskun legélhetőbb városa címe büszke tulajodnosai
+            vagyunk. Falunk folyamatosan gyarapodik, mind népességre, mind
+            életminőségben, de ettől függetlenül a hagyományőrzés az egyik kulcs
+            értéke a falunak.
           </h2>
           <div>
             <h1>Testvértelepülésünk: </h1>
             <h2>
               Nagycirák testvér települése a közepes-cirák. A két település
-              egymástól kb 7km-re helyeszkednek el. A kapcsolat eredetileg
-              1926-ban jött létre, amikor a két település egymás ellen
-              játszottak régionális foci mecset, ebből készítettek tradíciót
-              ahol, minden évbe egyszer játszanak egy mecset egymással.
+              egymástól kb 7km-re helyeszkedik el. A kapcsolat eredetileg
+              1926-ban jött létre, amikor a két település egymás ellen játszott
+              a regionális labdarúgó bajnokság döntöjét, innen ered a tradíció,
+              hogy minden évben egyszer, egymás ellen játszanak egy meccset.
             </h2>
           </div>
           <img
@@ -317,11 +318,11 @@ export const Rolunk = () => {
             <h1>Jövőképünk: </h1>
             <h2>
               Mint egy város, az a célunk, hogy minél nagyobra nőjünk. Ezt úgy
-              tervezzük elérni, hogy építünk több házat, hogy ne legyen túl
-              drága Nagycirákra költözni, csökkentsük az ingatlanárakat.
-              Tervezzük az iparűzési adót csökkenti, hogy több céget tudjunk a
-              városba vonzani. A jövőbe be szeretnénk vezetni több
-              családtámogatási programot.
+              tervezzük elérni, hogy egyre több házat éppítettünk, hogy ne
+              legyen túl drága Nagycirákra költözni, és es még az
+              építkezésiparnak is kedvező. Tervezzük az iparűzési adót
+              csökkenti, hogy több céget tudjunk a városba vonzani. A jövőben be
+              szeretnénk vezetni családtámogatási programokat.
             </h2>
           </div>
           <img
@@ -337,13 +338,13 @@ export const Rolunk = () => {
           <div>
             <h1>Híres szülöttünk: </h1>
             <h2>
-              Nagycirák leghíresebb személyeaz .... aki MotoGP versenyző volt.
-              1998-ban született Nagycirák külvárosában, kisgyerekként is imádta
-              ropni az utcaköröket a bringáján. Amikor szülei vettek neki egy
-              motort, akkor tetszett meg neki igazán. Csak ritkán versenyzett,
-              de 2016-ban elkezdte a professzionális karrierjét, és 2017-re
-              bekerült a MotoGP-be. Háromszor lett európai bajnok, majd 2023-ban
-              visszavonult a versenyzéstől.
+              Nagycirák leghíresebb személye Ciráki József, aki MotoGP versenyző
+              volt. 1998-ban született Nagycirák külvárosában, kisgyerekként is
+              imádta ropni az utcaköröket a bringáján. Amikor szülei vettek neki
+              egy motort, akkor tetszett meg neki igazán. Csak ritkán
+              versenyzett, de 2016-ban elkezdte a professzionális karrierjét, és
+              2017-re bekerült a MotoGP-be. Háromszor lett európai bajnok, majd
+              2023-ban visszavonult a versenyzéstől.
             </h2>
           </div>
         </div>

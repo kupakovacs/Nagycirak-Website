@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { NavBar } from "./Components/NavBar/NavBar";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Rolunk } from "./pages/Rolunk/Rolunk.jsx";
 import { Tortenelem } from "./pages/Tortenelem/Tortenelem.jsx";
 import { Vebkamerak } from "./pages/Vebkamerak/Vebkamerak.jsx";
@@ -12,28 +12,37 @@ import { Terkep } from "./pages/Terkep/Terkep.jsx";
 import { Onkormanyzat } from "./pages/Onkormanyzat/Onkormanyzat.jsx";
 import { SpecifikusOnkormanyzat } from "./pages/Onkormanyzat/SpecifikusOnkormanyzat.jsx";
 
-function App() {
-  const [count, setCount] = useState(0);
+const paths = [
+  { path: "/rolunk", element: <Rolunk /> },
+  { path: "/tortenelem", element: <Tortenelem /> },
+  { path: "/vebcam", element: <Vebkamerak /> },
+  { path: "/statisztika", element: <Statisztika /> },
+  { path: "/hirek/:", element: <Hirek /> },
+  { path: "/terkep", element: <Terkep /> },
+  { path: "/", element: <Rolunk /> },
+  { path: "/onkormanyzat", element: <Onkormanyzat /> },
+  {
+    path: "/onkormanyzat/:onkormanyzatnev",
+    element: <SpecifikusOnkormanyzat />,
+  },
+];
 
+function App() {
   return (
     <>
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route path="/rolunk" element={<Rolunk />} />
-          <Route path="/tortenelem" element={<Tortenelem />} />
-          <Route path="/vebcam" element={<Vebkamerak />} />
-          <Route path="/statisztika" element={<Statisztika />} />
-          <Route path="/hirek/:hirNev" element={<Hirek />} />
-          <Route path="/terkep" element={<Terkep />} />
-          <Route path="/" element={<Rolunk />} />
-          <Route path="/onkormanyzat" element={<Onkormanyzat />} />
-          <Route
-            path="/onkormanyzat/:onkormanyzatnev"
-            element={<SpecifikusOnkormanyzat />}
-          />
-        </Routes>
-      </Router>
+      <NavBar />
+      {paths.map((path, key) => {
+        console.log(window.location.pathname);
+        if (path.path == window.location.pathname) {
+          return <div key={key}>{path.element}</div>;
+        } else if (
+          window.location.pathname.startsWith(path.path.split(":")[0]) &&
+          path.path.includes("/:")
+        ) {
+          console.log("meow ");
+          return <div key={key}>{path.element}</div>;
+        }
+      })}
     </>
   );
 }

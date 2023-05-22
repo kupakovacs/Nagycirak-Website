@@ -3,7 +3,10 @@ import React, { useEffect, useState } from "react";
 export const Statisztika = () => {
   const grafikonok = [
     { cim: "Népesség", kep: `https://i.ibb.co/ykH39LX/N-vtelen-k-p.png` },
-    { cim: "Foglalkozás", kep: `https://i.ibb.co/HCMkhxt/Foglalkoztatas.png` },
+    {
+      cim: "Foglalkoztatás",
+      kep: `https://i.ibb.co/HCMkhxt/Foglalkoztatas.png`,
+    },
     { cim: "Kiadások", kep: `https://i.ibb.co/3pZycJK/Koltsegvetes.png` },
     { cim: "Adóbevétel", kep: `https://i.ibb.co/7py5qgV/Adobevete.png` },
     { cim: "Bevándorlás", kep: `https://i.ibb.co/Jy5TKYd/Bevandorlas.png` },
@@ -38,10 +41,10 @@ export const Statisztika = () => {
     >
       <h1>Élő Statisztikák</h1>
       {nepesseg ? <p>Népesség: {nepesseg}</p> : <p>Népesség: betöltés...</p>}
-      <h1>Grafikonok?</h1>
+      <h1>Grafikonok</h1>
       {grafikonok.map((grafkon, key) => {
         return (
-          <div>
+          <div key={key}>
             <h2>{grafkon.cim}</h2>
             <img src={grafkon.kep} />
           </div>
